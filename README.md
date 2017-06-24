@@ -1,23 +1,29 @@
-# Slim 3 Basic Eloquent Skeleton
-This is a skeleton template for Slim 3, Twig, Bootstrap and Eloquent Framework. The simplest boilerplate for getting started on a new Slim 3 adventure. No clutter, ready to transform into your next big idea and just to save a little time.
+# Slim 3 Basic Authentication Skeleton
+This is a skeleton template for Slim 3, Twig, Bootstrap and Authentication Framework. The simplest boilerplate for getting started on a new Slim 3 adventure. No clutter, ready to transform into your next big idea and just to save a little time.
 
 Also used in <a href="https://www.iconic-publishing.com" target="_blank">Iconic Publishing</a> projects.
 
 # Installation
 
-Download <a href="https://getcomposer.org/">Composer</a>
+PHP Version 5.4 or above.
+					
+Download <a href="https://getcomposer.org/" target="_blank">Composer</a>
 
 Dependencies are located in: <code>composer.json</code>
 
 Updating dependencies in your Terminal via composer: <code>cd [path/to/project]</code>
+					
+Run Globally:
+					
+<pre>composer require iconic-publishing/slim3-basic-authentication-skeleton</pre>
 
-Run: <code>composer require iconic-publishing/slim3-basic-eloquent-skeleton</code>
+<pre>composer update</pre>
+					
+Run Locally with PHP:
+					
+<pre>php composer.phar require iconic-publishing/slim3-basic-authentication-skeleton</pre>
 
-Run: <code>composer update</code>
-
-Run with PHP: <code>php composer.phar require iconic-publishing/slim3-basic-eloquent-skeleton</code>
-
-Run with PHP: <code>php composer.phar update</code>
+<pre>php composer.phar update</pre>
 
 # Illuminate Database (Eloquent)
 					
@@ -44,18 +50,26 @@ Ability to generate URL slugs: <code>app/Models/Filters.php</code>
     }
 </pre>
 
-# Settings
-
-Contact page uses Mailgun API to send mail.
-
+# Mailgun
+					
+Open a Sandbox account with <a href="https://www.mailgun.com" target="_blank">Mailgun</a>
+					
 Mailgun API settings are located in: <code>config/dev.php</code>
-
+					
 Changing Mailgun to send either HTML or Plain Text email: <code>app/Models/MailgunEmail.php</code>
-
+					
+# Twilio SMS
+					
+Open a Sandbox account with <a href="https://www.twilio.com" target="_blank">Twilio</a>
+					
+Twilio API settings are located in: <code>config/dev.php</code>
+					
+# Settings
+					
 Respect Validation settings are located in: <code>app/Validation/Forms/ContactForm.php</code>
-
+					
 Middleware for Slim CSRF and Validation are located in: <code>app/Middleware/</code>
-
+					
 Custom 404 <code>notFoundHandler</code> are located in: <code>app/Handlers/NotFoundHandler.php</code>
 
 # Features
@@ -74,4 +88,7 @@ Custom 404 <code>notFoundHandler</code> are located in: <code>app/Handlers/NotFo
 <li>Slim CSRF</li>
 <li>Respect Validation</li>
 <li>Mailgun API</li>
+<li>Twilio API (SMS Notification)</li>
+<li>Nesbot Carbon</li>
 </ul>
+
