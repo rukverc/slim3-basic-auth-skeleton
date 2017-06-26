@@ -49,18 +49,18 @@ return [
 	],
 	
 	'mailgun' => [
-		'apikey' => 'key-8664038559d1e39d113095a411b4c67b',
-		'domain' => 'sandbox8604c6f181c24989969ebe64c06a6ef1.mailgun.org',
-		'from' => 'noreply@iconic-publishing.com',
+		'apikey' => '',
+		'domain' => '',
+		'from' => '',
 		'host' => 'smtp.mailgun.org',
-		'username' => 'postmaster@sandbox8604c6f181c24989969ebe64c06a6ef1.mailgun.org',
-		'password' => 'kinky123'
+		'username' => '',
+		'password' => ''
 	],
 	
 	'twilio' => [
-		'sid' => 'AC835dbcfe33dfd8cf272051856483c243',
-		'token' => '875358dd3bebfbe02033c7cb418397f8',
-		'number' => '+14242851703',
+		'sid' => '',
+		'token' => '',
+		'number' => '',
 		'my_number' => 'YOUR_MOBILE_NUMBER', //Optional for internal SMS - Replace 'YOUR_MOBILE_NUMBER' with e.g '+66123456789'
 		'name' => 'YOUR_GREETING_NAME' //Optional for internal SMS - Replace 'YOUR_GREETING_NAME' with e.g 'John'
 	],
