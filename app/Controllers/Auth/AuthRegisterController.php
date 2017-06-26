@@ -23,7 +23,7 @@ class AuthRegisterController extends BaseConstructor {
 			return $response->withRedirect($this->router->pathFor('getRegister'));
 		}
 		
-		$hash = $this->hash->hashed();
+		$identifier = $this->hash->hashed();
 		
 		$user = User::create([
 			'username' => mt_rand(100000, 999999),
@@ -34,7 +34,7 @@ class AuthRegisterController extends BaseConstructor {
 			'password' => $this->hash->password($request->getParam('password')),
 			'active' => false,
 			'locked' => true,
-			'active_hash' => $hash
+			'active_hash' => $identifier
 		]);
 
 		$user->permissions()->create(UserPermission::$user);
