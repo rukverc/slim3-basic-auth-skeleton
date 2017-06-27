@@ -74,6 +74,7 @@ $container['view'] = function($container) {
 	$view->addExtension(new TwigExtension($container->get('router'), $container->get('request')->getUri()));
 	$view->addExtension(new DebugExtension());
 	$view->getEnvironment()->addGlobal('config', $container['config']);
+	$view->getEnvironment()->addGlobal('auth', $container['auth']);
 	$view->getEnvironment()->addGlobal('flash', $container['flash']);
 	$view->getEnvironment()->addGlobal('select', $container['select']);
 
